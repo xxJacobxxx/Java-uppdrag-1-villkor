@@ -57,7 +57,7 @@ else{
     else{
         System.out.println("Stick och brinn");
     }
-    */
+    
     Scanner tb = new Scanner(System.in);
     System.out.println("Pls ge mig användernamn"); 
     String use = tb.nextLine();
@@ -69,7 +69,30 @@ else{
     }
     else{
         System.out.println("Ritard du kan inte lösa ord eller använda namn");
+        
     }
+    */
+    Scanner tb=new Scanner(System.in);
+    System.out.println("Choose your väderprogram:");
+    System.out.println("1. Skriv ut temperatur");
+    System.out.println("2. Skriv ut Vind");
+    System.out.println("3. Skriv ut luftfuktighet");
+    System.out.print("Ange val");
+    int choose = tb.nextInt();
+    switch(choose){
+        case 1:
+        System.out.println("Det är varm 🥵");
+        break;
+        case 2:
+        System.out.println("Mycket snabb, brum brum");
+        break;
+        case 3:
+        System.out.println("Nerrrrrrrrrrd 🤓");
+        break;
+    }
+
+
+
     
 
 }
