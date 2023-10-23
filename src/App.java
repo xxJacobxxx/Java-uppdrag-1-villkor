@@ -42,8 +42,36 @@ else{
     else if(clock>=24){
         System.out.println("?????");
     }
-    */ 
     
+    Scanner klubb = new Scanner(System.in);
+    System.out.println("Över 18?");
+    boolean ålder = klubb.nextBoolean();
+    System.out.println("Medlem?");
+    boolean medlem = klubb.nextBoolean();
+    if(ålder==true){
+        System.out.println("Kom in ;)");
+    }
+    else if(medlem==true){
+        System.out.println("Kom in ;)");
+    }
+    else{
+        System.out.println("Stick och brinn");
+    }
+    */
+    Scanner tb = new Scanner(System.in);
+    System.out.println("Pls ge mig användernamn"); 
+    String use = tb.nextLine();
+    System.out.println("Pls ge mig lösenord");
+    String pass = tb.nextLine();
+
+    if(use.equals("root") && pass.equals("passwd")){
+        System.out.println("Du bor på 43.296671, 4.581379");
+    }
+    else{
+        System.out.println("Ritard du kan inte lösa ord eller använda namn");
+    }
+    
+
 }
 }
 
